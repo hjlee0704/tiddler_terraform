@@ -1,36 +1,27 @@
-
-variable "ami-id" {
+variable "aws-access-key" {
   type = string
 }
 
-variable "iam-instance-profile" {
-  default = ""
-  type    = string
-}
-
-variable "instance-type" {
-  type    = string
-  default = "t2.micro"
-}
-
-variable "name" {
+variable "aws-secret-key" {
   type = string
 }
 
-variable "key-pair" {
+variable "aws-region" {
   type = string
 }
 
-variable "private-ip" {
-  default = ""
-  type    = string
-}
-
-variable "subnet-id" {
+variable "listings-service-db-password" {
   type = string
 }
 
-variable "vpc-security-group-ids" {
-  type    = list(string)
-  default = []
+variable "listings-service-db-username" {
+  type = string
+}
+
+variable "users-service-db-password" {
+  type = string
+}
+
+variable "users-service-db-username" {
+  type = string
 }
